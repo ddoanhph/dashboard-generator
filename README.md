@@ -1,6 +1,4 @@
-Perfect! Let me prepare you for a technical presentation/interview about your AI Dashboard Agent. Here are the key questions and answers:
-
-## 🎯 Executive Summary (30 seconds)
+## 🎯 Executive Summary
 
 **“What is this?”**
 
@@ -11,8 +9,6 @@ Perfect! Let me prepare you for a technical presentation/interview about your AI
 ## 📋 Common Questions & Answers
 
 ### **1. What problem does this solve?**
-
-**Answer:**
 
 > “Currently, creating HR dashboards requires:
 > 
@@ -30,11 +26,9 @@ Perfect! Let me prepare you for a technical presentation/interview about your AI
 
 -----
 
-### **2. What AI model are you using and why?**
+### **2. AI model I am using and why?**
 
-**Answer:**
-
-> “We’re using **Gemini 2.5 Pro** through Google Cloud’s Vertex AI platform. I initially tested with Gemini 2.0 Flash, but upgraded to Pro for better analytical reasoning.
+> “We’re using **Gemini 2.5 Flash** through Google Cloud’s Vertex AI platform.
 > 
 > **Why Gemini 2.5 Pro:**
 > 
@@ -52,9 +46,7 @@ Perfect! Let me prepare you for a technical presentation/interview about your AI
 
 -----
 
-### **3. What’s the technical architecture?**
-
-**Answer:**
+### **3. Technical architecture?**
 
 > “It’s a three-tier architecture deployed entirely on Google Cloud Platform:
 > 
@@ -73,7 +65,7 @@ Perfect! Let me prepare you for a technical presentation/interview about your AI
 > 
 > **AI Layer (Vertex AI):**
 > 
-> - Gemini 2.5 Pro for intelligence
+> - Gemini 2.5 Flask for intelligence
 > - Analyzes user intent
 > - Selects relevant data fields from 20+ available employee attributes
 > - Generates insights, metrics, and visualization specifications
@@ -83,7 +75,7 @@ Perfect! Let me prepare you for a technical presentation/interview about your AI
 **Architecture Diagram (describe verbally):**
 
 ```
-User → Cloud Run (Frontend) → Cloud Run (Backend) → Vertex AI (Gemini 2.5 Pro)
+User → Cloud Run (Frontend) → Cloud Run (Backend) → Vertex AI (Gemini 2.5 Flask)
                                        ↓
                               [Future: BigQuery Employee Data]
 ```
@@ -91,8 +83,6 @@ User → Cloud Run (Frontend) → Cloud Run (Backend) → Vertex AI (Gemini 2.5 
 -----
 
 ### **4. How does the AI know which data fields to use?**
-
-**Answer:**
 
 > “I engineered a detailed system prompt that includes:
 > 
@@ -114,9 +104,7 @@ User → Cloud Run (Frontend) → Cloud Run (Backend) → Vertex AI (Gemini 2.5 
 
 ### **5. What’s the cost to run this?**
 
-**Answer:**
-
-> “This is remarkably cost-effective due to serverless architecture:
+> “This is cost-effective due to serverless architecture:
 > 
 > **Monthly Operating Costs (estimated for 100 users):**
 > 
@@ -130,7 +118,6 @@ User → Cloud Run (Frontend) → Cloud Run (Backend) → Vertex AI (Gemini 2.5 
 > **Compare to alternatives:**
 > 
 > - Traditional BI tool licenses: $70-100/user/month = $7,000-10,000/month for 100 users
-> - Data analyst salaries: $80K+ annually
 > 
 > **ROI is significant:** If this saves just 2 hours per analyst per week, that’s $50K+ in productivity gains annually.”
 
@@ -154,7 +141,7 @@ User → Cloud Run (Frontend) → Cloud Run (Backend) → Vertex AI (Gemini 2.5 
 > 
 > **What makes it accurate:**
 > 
-> - Uses actual data field definitions from our HR system
+> - Uses actual data field definitions from our HR Worker Core Information
 > - Applies industry-standard HR metrics (attrition rate, tenure analysis, etc.)
 > - Cross-references multiple dimensions (e.g., attrition by tenure AND job family)
 > 
@@ -174,13 +161,11 @@ User → Cloud Run (Frontend) → Cloud Run (Backend) → Vertex AI (Gemini 2.5 
 
 ### **7. What about data security and privacy?**
 
-**Answer:**
-
 > “Security is built-in at every layer:
 > 
 > **Data Privacy:**
 > 
-> - All processing happens within our GCP project (molten-album-478703-d8)
+> - All processing happens within the GCP project (currently personal project: molten-album-478703-d8)
 > - No data is sent to external APIs or third parties
 > - Vertex AI doesn’t use customer data for model training
 > 
@@ -202,8 +187,6 @@ User → Cloud Run (Frontend) → Cloud Run (Backend) → Vertex AI (Gemini 2.5 
 
 ### **8. How long did this take to build?**
 
-**Answer:**
-
 > “Initial prototype: 1 day for core functionality
 > Refinement and production-ready version: 3-4 days total
 > 
@@ -213,15 +196,13 @@ User → Cloud Run (Frontend) → Cloud Run (Backend) → Vertex AI (Gemini 2.5 
 > - Frontend UI/UX: 6 hours
 > - Chart components and data visualization: 4 hours
 > - Testing, debugging, deployment: 6 hours
-> - Model optimization (Flash → Pro): 2 hours
+> - Model optimization: 2 hours
 > 
 > This demonstrates the power of modern AI tools—what would have taken weeks with traditional development is now possible in days.”
 
 -----
 
 ### **9. What are the limitations?**
-
-**Answer (be honest):**
 
 > “Current limitations:
 > 
@@ -243,8 +224,6 @@ User → Cloud Run (Frontend) → Cloud Run (Backend) → Vertex AI (Gemini 2.5 
 
 ### **10. What’s the roadmap?**
 
-**Answer:**
-
 > “**Phase 1 (Current):** ✅ Proof of concept with intelligent dashboard generation
 > 
 > **Phase 2 (Next 2-4 weeks):**
@@ -265,8 +244,7 @@ User → Cloud Run (Frontend) → Cloud Run (Backend) → Vertex AI (Gemini 2.5 
 > 
 > - Predictive analytics (‘who is at risk of leaving?’)
 > - What-if scenario modeling
-> - Multi-language support
-> - Mobile app version”
+> - Mobile app version?”
 
 -----
 
@@ -299,8 +277,6 @@ User → Cloud Run (Frontend) → Cloud Run (Backend) → Vertex AI (Gemini 2.5 
 
 ### **12. Can it handle more complex queries?**
 
-**Answer:**
-
 > “Yes! The AI can handle multi-dimensional analysis:
 > 
 > **Example complex queries:**
@@ -322,8 +298,6 @@ User → Cloud Run (Frontend) → Cloud Run (Backend) → Vertex AI (Gemini 2.5 
 
 ### **13. What if the AI generates wrong insights?**
 
-**Answer:**
-
 > “Multiple safeguards:
 > 
 > 1. **Transparent field selection** - Dashboard shows which fields were used
@@ -338,4 +312,3 @@ User → Cloud Run (Frontend) → Cloud Run (Backend) → Vertex AI (Gemini 2.5 
 > - Validate AI outputs against manual calculations
 > - Use AI for exploration, humans for critical decisions
 > 
-> The AI is a highly intelligent​​​​​​​​​​​​​​​​
