@@ -16,8 +16,8 @@ LOCATION = os.environ.get("GCP_LOCATION", "us-central1")
 vertexai.init(project=PROJECT_ID, location=LOCATION)
 
 # gemini model using preview API
-model = GenerativeModel("gemini-2.0-flash-001")
-#model = GenerativeModel("gemini-2.5-pro")
+#model = GenerativeModel("gemini-2.0-flash-001")
+model = GenerativeModel("gemini-2.5-pro")
 
 # Database schema for employee data
 EMPLOYEE_SCHEMA = {
