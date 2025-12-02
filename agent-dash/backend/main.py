@@ -63,7 +63,7 @@ def health_check():
         "status": "healthy",
         "project_id": PROJECT_ID,
         "location": LOCATION,
-        "model": "gemini-pro (Vertex AI Preview)"
+        "model": "gemini-flash"
     }), 200
 
 
